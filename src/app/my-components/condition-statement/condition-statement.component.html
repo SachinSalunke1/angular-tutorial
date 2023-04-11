@@ -1,0 +1,37 @@
+<h5>If-Else Condition (Directive)</h5>
+<button *ngIf="hideshow">Hide & Show</button>
+<div *ngIf="age >= 18">Age is greater than Or equal to 18th</div>
+<div *ngIf="age >= 17 ; else elseBlock">Age is less than 18th</div>
+<ng-template #elseBlock >
+    <h5>Else block is working fine.</h5>
+</ng-template>
+-------------------------------------------------
+<h5>Switch case Condition (Directive)</h5>
+<div [ngSwitch]="colour">
+    <h6 style="color :red" *ngSwitchCase="'red'">Red Color</h6>
+    <h6 style="color :green" *ngSwitchCase="'green'">Green Color</h6>
+    <h6 style="color :orange" *ngSwitchCase="'orange'">Orange Color</h6>
+    <h6 *ngSwitchCase="''">Default Color</h6>
+</div>
+-------------------------------------------------
+<h5>For Loop case (ngFor Directive)</h5>
+<h6>Name List</h6>
+<ul *ngFor="let name of names">
+    <li>{{name}}</li>
+</ul>
+-------------------------------------------------
+<h5>User List</h5>
+<table>
+    <thead>
+        <tr>
+            <th> [  Name  ]</th>
+            <th> [  Age   ]</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let user of users">
+        <tr>
+            <td>[ {{user.name}} ]</td>
+            <td>[  {{user.age}} ]</td>
+        </tr>
+    </tbody>
+</table>

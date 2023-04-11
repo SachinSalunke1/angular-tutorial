@@ -1,0 +1,9 @@
+{
+    "/url": {
+        "target": "https://www.nseindia.com",
+        "pathRewrite": {
+            "^/url": ""
+        },
+        "changeOrigin": true
+    }
+}

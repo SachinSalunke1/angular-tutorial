@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserDataService } from './services/user-data.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-tutorial';
+  title = 'Angular Tutorial'
+ // Parent data for child -1 component
+  value = "This is parent Data";
+  
+  data ={
+    name:"Sachin",
+    channel:"STARTECH"
+  }
+   // Parent data for child -2 component
+  channelName = '';
+  courseName = ''
+  formParent(data:any){
+    this.channelName = data.name;
+    this.courseName = data.course;
+    console.info(data);
+  }
+ 
 }

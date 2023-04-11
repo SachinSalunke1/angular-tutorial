@@ -1,0 +1,12 @@
+<p [class]="success">This is success Message</p>
+<p [class]="error">This is danger Message</p>
+<p [class]="underline">This is underline Message</p>
+<p [class]="bold">This is bold Message</p>
+<!--<p [class.hasError]="success">This is hasError Message</p>-->
+<p [class]="multiclass">This is multiclass Message</p>
+------------------------------------------------------------------
+<h3>Style Binding</h3>
+<p [style.color]="'blue'">This is normal style binding</p>
+<p [style.color]="textColor">This is dynamic style binding</p>
+<p [style]="multiSelection">This is multi selection style binding</p>
+<p [style.color]="hasError? 'red':'blue'">This is condition style binding</p>

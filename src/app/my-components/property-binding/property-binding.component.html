@@ -1,0 +1,8 @@
+Name :<input type="text" (keyup)="getValue($event.target.value)">
+<h6> : {{YTName}}</h6>
+----------------------------------------------------------------
+<h6>Simple Calculation</h6>
+Value 1:<input type="text" #num1 [value]="number1">&nbsp;
+Value 2:<input type="text" #num2 [value]="number2">&nbsp;
+<button (click)="calc(num1.value,num2.value)">SUM</button>&nbsp;
+<h6>Total :{{sum}}</h6>
